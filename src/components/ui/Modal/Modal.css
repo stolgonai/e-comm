@@ -1,0 +1,117 @@
+.modal {
+  position: fixed;
+  bottom: 0;
+  left: 0px;
+  z-index: 10;
+  width: 375px;
+  padding-top: 14px;
+  background: #F9F9F9;
+  box-shadow: 0px -4px 30px rgba(0, 0, 0, 0.08);
+  border-radius: 34px 34px 0px 0px;
+}
+
+.modal-bg {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 9;
+}
+  
+.modal h3 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  text-align: center;
+  color: #222222;
+  margin-top: 16px;
+  margin-bottom: 14px;
+}
+
+.line {
+width: 60px;
+height: 6px;
+background: #9B9B9B;
+border-radius: 3px;
+margin-left: auto;
+margin-right: auto;
+}
+
+.modal-list {
+  display: grid;
+  padding: 0;
+}
+
+.modal-list li {
+  display: grid;
+  align-items: center;
+  padding-left: 16px;
+  font-size: 16px;
+  font-weight: 400;
+  height: 48px;
+}
+
+.modal-list li:hover {
+  background-color: #DB3022;
+  color: white;
+}
+
+/* SIZE CHART */
+.sizeChart{
+  display: flex;
+  flex-wrap: wrap;
+  flex-flow: row wrap;
+  /* justify-content */
+}
+
+.sizes{
+  width: 100px;
+  height: 40px;
+  border: 0.4px solid #9B9B9B;
+  box-sizing: border-box;
+  border-radius: 8px;
+  margin: 15px 8px 8px 15px;
+  background-color: var(--bg-color-light);
+  font-weight: 500;
+}
+
+.sizeInfo{
+  padding: 16px;
+  font-size: 16px;
+  /* opacity: 0.25; */
+  border: 0.4px solid #dfdddd;
+  
+}
+
+.forvardIcon{
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  width:16px
+}
+
+.footerBtn{
+  margin: 28px 16px
+}
+
+.footerModalBtn{
+  background-color: var(--primary-color);
+  box-shadow: 0px 4px 8px rgba(211, 38, 38, 0.25);
+  border-radius: 25px;
+  width: 100%;
+  color: var(--bg-color);
+  font-size: var(--caption-font-size);
+  padding:14px;
+  font-weight: 500;
+
+}
+
+.lineBottom{
+  background: #000000;
+  border-radius: 100px;
+  width: 134px;
+  height:5px;
+  margin-bottom: 9px
+}

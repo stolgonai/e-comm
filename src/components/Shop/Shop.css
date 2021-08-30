@@ -1,0 +1,179 @@
+.top-list {
+  background-color: #F9F9F9; 
+  padding: 16px 16px 26px;
+  display: grid;
+  row-gap: 26px;
+}
+
+.one-card {
+  background-color: #FFFFFF;
+  display: grid;
+  grid-template-columns: auto 1fr ;
+  grid-template-rows: repeat(4, auto);
+  column-gap: 11px;
+  justify-content: left;
+  grid-template-areas: 
+        "pic title"
+        "pic firm"
+        "pic star"
+        "pic price";
+  position: relative;
+
+}
+
+
+.cardPic {
+  grid-area: pic;
+  /* width:104px;
+  height:104px */
+}
+
+.cardCaption {
+  display: grid;
+  grid-template-columns: repeat (4, auto );
+}
+
+.cardTitle {
+  grid-area: title;
+  font-weight: 500;
+  font-size: 16px;
+  color: #222222;
+}
+
+.cardFirm {
+  grid-area: firm;
+  font-weight: normal;
+  font-size: 11px;
+  color: #9B9B9B;
+  margin-top: 1px;
+}
+
+.cardPrice {
+  grid-area: price;
+  font-weight: 500;
+  font-size: 14px;
+  color: #222222;
+}
+
+.rating {
+  display: grid;
+  grid-template-columns: repeat(5, auto) max-content;
+  justify-content: start;
+  column-gap: 2px;
+}
+
+.star {
+  width: 14px;
+  height: 14px;
+}
+
+.like {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: white;
+  position: absolute;
+  right: 0px;
+  bottom: -10px;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.08);
+}
+
+.categorList{
+  width: 375px;
+  font-family: Roboto;
+  background:  #F9F9F9;;
+}
+
+/* tabs */
+
+.tabs{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 15px;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  background: #F9F9F9;
+  box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.08);
+}
+.tabs .title{
+  font-weight: bold;
+}
+
+.catList{
+  width:375px;
+  padding: 12px 16px 24px;
+  display: grid;
+  grid-template-columns: 343px;
+  grid-template-rows: repeat(5, 100px);
+  row-gap: 16px;
+  align-content: center;
+}
+
+.chooseByGender{
+  display: grid;
+  justify-content: space-around;
+  align-items: center;
+  width:375px;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #222222;
+  background: #FFFFFF;
+  height: 44px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.chooseByGender div.gender{
+  width: 100%;
+  padding: 11px 14px;
+
+}
+
+ #active {
+  border-bottom: 1px solid #DB3022;
+  font-weight: bold;
+}
+.gender:hover{
+  border-bottom: 1px solid #DB3022;
+  font-weight: bold;
+}
+
+.salesBaner{
+  background-color: #DB3022;
+  color:#FFFFFF;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 1px 25px rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+
+}
+
+.title{
+  align-self: center;
+  margin-bottom:0;
+
+}
+.discount{
+  align-self: center;
+  margin-top:0
+}
+.lists{
+  border-radius: 8px;
+  display: grid;
+  grid-template-columns: repeat(2, 172px );
+  color:#222222;
+  font-weight: 500;
+  font-size: 18px;
+  background: #FFFFFF;
+  box-shadow: 0px 1px 25px rgba(0, 0, 0, 0.08);
+}
+.departName{
+  padding: 23px 39px 39px;
+}

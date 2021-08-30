@@ -1,0 +1,259 @@
+.loginPage {
+  padding: 12px 16px 24px;
+}
+
+.textField {
+  background: #FFFFFF;
+  box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.05);
+  border-radius: 4px;
+  height: 64px;
+  margin-bottom: 8px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-template-rows: repeat(2, auto);
+  row-gap: 3px;
+  column-gap: 6px;
+  padding: 13px 20px 15px;
+  grid-template-areas:
+    "caption icon"
+    "input icon";
+}
+
+.textField .caption {
+  grid-area: caption;
+  color: #9B9B9B;
+  transform: translateY(13px);
+  transition: transform .3s ease;
+  will-change: transform;
+  transform-origin: 0 0;
+}
+
+.textField .input {
+  grid-area: input;
+  width: 100%;
+}
+
+.textField .input:focus + .caption {
+  transform: translateY(0) scale(0.7);
+}
+
+.textField .input:focus {
+  outline: none;
+}
+
+.textField .icon {
+  grid-area: icon;
+  align-self: center;
+}
+
+.registerPage {
+  Width: 375px;
+  Height: 812px;
+  padding: 12px 16px 24px;
+}
+
+.textField {
+  background: #FFFFFF;
+  box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.05);
+  border-radius: 4px;
+  height: 64px;
+  margin-bottom: 8px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-template-rows: repeat(2, auto);
+  row-gap: 3px;
+  column-gap: 6px;
+  padding: 13px 20px 15px;
+  grid-template-areas:
+  "caption icon"
+  "input icon";
+}
+
+.emailCaption {
+  grid-area: caption;
+  color: #9B9B9B;
+  font-size: 11px;
+  /* transform: translateY(13px);
+  transition: transform .3s ease;
+  will-change: transform;
+  transform-origin: 0 0; */
+}
+
+.textField .input {
+  grid-area: input;
+  width: 100%;
+}
+
+.next {
+  margin-top: 16px;
+  margin-bottom: 32px;
+  display:flex;
+  justify-content:flex-end;
+}
+.nextBtn {
+  padding-left: 7px;
+  padding-right: 20px;
+}
+
+.loginBtn {
+  Width: 343px;
+  Height:48px;
+  background-color: #DB3022;
+  box-shadow: 0px 4px 8px rgba(211, 38, 38, 0.25);
+  border-radius: 25px;
+  margin-bottom: 194px;
+  
+}
+
+footer {
+  text-align: center;
+}
+
+.footerText {
+  font-weight: 500;
+  font-size: 14px;
+
+}
+.social {
+  margin-top: 12px;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 92px 92px;
+  column-gap: 16px;
+}
+.google {
+  width: 92px;
+  height: 64px;
+  border-radius: 24px;
+  background-color: white;
+  box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.05);
+}
+
+.facebook {
+  width: 92px;
+  height: 64px;
+  border-radius: 24px;
+  background-color: white;
+  box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.05);
+}
+
+.resetPage {
+  padding: 12px 16px 24px;
+}
+
+.pageTitle {
+  margin-top: 74px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 34px;
+  line-height: 40px;
+}
+
+.btn {
+  cursor: pointer;
+  font-family: inherit;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  background: none;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input {
+  background-color: none;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  font-family: inherit;
+}
+
+
+.textField {
+  background: #FFFFFF;
+  margin-top: 16px;
+  box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.05);
+  border: 1px solid #F01F0E;
+  border-radius: 4px;
+  height: 64px;
+  margin-bottom: 8px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-template-rows: repeat(2, auto);
+  row-gap: 3px;
+  column-gap: 6px;
+  padding: 13px 20px 15px;
+  grid-template-areas:
+    "caption icon"
+    "input icon";
+}
+
+.textField .caption {
+  grid-area: caption;
+  color: #9B9B9B;
+  transform: translateY(13px);
+  transition: transform .3s ease;
+  will-change: transform;
+  transform-origin: 0 0;
+}
+
+.textField .input {
+  grid-area: input;
+  width: 100%;
+}
+
+.textField .input:focus + .caption {
+  transform: translateY(0) scale(0.7);
+}
+
+
+.textField .input:focus {
+  outline: none;
+}
+
+.textField .icon {
+  grid-area: icon;
+  align-self: center;
+  width: 14px;
+  height: 14px;
+}
+
+.warningText {
+  margin: 81px 17px 16px 15px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #222222;
+}
+
+.errorMsg {
+  position: absolute;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 11px;
+  line-height: 13px;
+  display: flex;
+  align-items: center;
+  margin: 3px 76px 54px 36px;
+  color: #F01F0E;
+}
+
+.sendBtn {
+  position: absolute;
+  width: 343px;
+  height: 48px;
+  margin: 54px 16px 347px 16px;
+  background: #DB3022;
+  box-shadow: 0px 4px 8px rgba(211, 38, 38, 0.25);
+  border-radius: 25px;
+  color: white;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  align-items: center;
+  text-align: center;
+}

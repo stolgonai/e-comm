@@ -1,0 +1,129 @@
+.homePage {
+  min-height: 100vh;
+}
+
+.banner {
+  background-image: url(../../assets/bannerImg.png);
+  background-repeat: no-repeat;
+  padding-left: 15px;
+  padding-bottom: 32px;
+  height: 536px;
+  display: grid;
+  align-content: end;
+  width: 100%;
+}
+
+.banner h1 {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 56px;
+  color: #ffffff;
+  line-height: 56px;
+}
+
+.banner button {
+  background: #db3022;
+  box-shadow: 0px 4px 8px rgba(211, 38, 38, 0.25);
+  border-radius: 25px;
+  width: 160px;
+  height: 36px;
+  margin-top: 2px;
+  border: none;
+  color: white;
+}
+
+.saleBlock {
+  width: 375px;
+}
+
+.aboutSale {
+  padding: 12px 16px 24px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  row-gap: 2px;
+  grid-template-areas:
+    "title button"
+    "caption ...";
+}
+
+.saleTitle {
+  grid-area: title;
+}
+
+.saleCaption {
+  grid-area: caption;
+  color: #9b9b9b;
+  font-weight: 400;
+  font-size: 11px;
+}
+
+.viewBtn {
+  grid-area: button;
+  justify-self: end;
+}
+
+.card {
+  padding: 17px 0;
+}
+
+.cardTitle {
+  font-weight: 500;
+  font-size: 16px;
+  margin-top: 3px;
+}
+
+.cardPrice {
+  color: #db3022;
+  font-size: 14px;
+  font-weight: 500;
+}
+.cardPrice {
+  color: #db3022;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.cardList {
+  display: grid;
+  grid-auto-flow: column;
+  column-gap: 21px;
+  overflow-y: auto;
+  padding: 0 20px;
+}
+
+/* categories list */
+
+h1 {
+  margin: 0;
+  padding: 0;
+}
+
+.banner {
+  background-image: url(../../assets/bannerImg.png);
+  background-repeat: no-repeat;
+  padding-left: 15px;
+  padding-bottom: 32px;
+  width: 100%;
+}
+
+.banner h1 {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 56px;
+  color: #FFFFFF;
+  padding-top: 338px;
+  line-height: 56px;
+}
+
+.banner button {
+  background: #DB3022;
+  box-shadow: 0px 4px 8px rgba(211, 38, 38, 0.25);
+  border-radius: 25px;
+  width: 160px;
+  height: 36px;
+  margin-top: 2px;
+  border: none;
+}
