@@ -1,3 +1,4 @@
+
 .modal {
   position: fixed;
   bottom: 0;
@@ -64,7 +65,7 @@ margin-right: auto;
   display: flex;
   flex-wrap: wrap;
   flex-flow: row wrap;
-  /* justify-content */
+  margin-bottom: 24px
 }
 
 .sizes{
@@ -81,9 +82,12 @@ margin-right: auto;
 .sizeInfo{
   padding: 16px;
   font-size: 16px;
-  /* opacity: 0.25; */
   border: 0.4px solid #dfdddd;
-  
+  box-shadow: 0px 0px 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: center;
 }
 
 .forvardIcon{

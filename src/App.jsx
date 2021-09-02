@@ -4,6 +4,7 @@ import ShopPage from './components/Shop/Shop'
 import Navbar from './components/Navbar/Navbar'
 import Modal from './components/ui/Modal/Modal'
 import moreInfoIcon from './assets/forvardIcon.png'
+
 import './components/Shop/Shop.css'
 import './components/Home/Home.css'
 
@@ -27,7 +28,7 @@ function App() {
             <button className="btn sizes">L</button>
             <button className="btn sizes">XL</button>
           </div>
-          <div className="tabs sizeInfo">
+          <div className="sizeInfo">
               <div className="title">Size info</div>
             <button className="btn clickMore">
               <img class="forvardIcon" src= {moreInfoIcon}   alt="click more" />
@@ -38,6 +39,7 @@ function App() {
         </Modal>
       )}
       
+   
     </div>
   );
 }

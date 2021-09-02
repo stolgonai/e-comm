@@ -10,7 +10,6 @@ function Modal({ onClose, children, btnText }) {
         <div className="footerBtn">
             <button className="btn footerModalBtn"> {btnText} </button>
         </div>
-        <div className="line lineBottom"></div>
       </div>
 
       
