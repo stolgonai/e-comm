@@ -1,10 +1,8 @@
-
 .modal {
   position: fixed;
   bottom: 0;
   left: 0px;
   z-index: 10;
-  width: 375px;
   padding-top: 14px;
   background: #F9F9F9;
   box-shadow: 0px -4px 30px rgba(0, 0, 0, 0.08);
@@ -29,7 +27,7 @@
   text-align: center;
   color: #222222;
   margin-top: 16px;
-  margin-bottom: 14px;
+  margin-bottom: 33px;
 }
 
 .line {
@@ -60,62 +58,92 @@ margin-right: auto;
   color: white;
 }
 
-/* SIZE CHART */
-.sizeChart{
-  display: flex;
-  flex-wrap: wrap;
-  flex-flow: row wrap;
-  margin-bottom: 24px
+
+/* whats-your-rate */
+
+.yourRateModal{
+  padding: 16px
 }
 
-.sizes{
-  width: 100px;
-  height: 40px;
-  border: 0.4px solid #9B9B9B;
-  box-sizing: border-box;
-  border-radius: 8px;
-  margin: 15px 8px 8px 15px;
-  background-color: var(--bg-color-light);
-  font-weight: 500;
+.header{
+  padding-bottom:0px;
+  margin-bottom: 0px
 }
 
-.sizeInfo{
-  padding: 16px;
-  font-size: 16px;
-  border: 0.4px solid #dfdddd;
-  box-shadow: 0px 0px 0px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  text-align: center;
+.starRow{
+  width:276px;
+  display: grid;
+  grid-auto-flow: column;
+  column-gap: 24px;
+  padding: 0px 40px 35px 
 }
 
-.forvardIcon{
-  -webkit-transform: scaleX(-1);
-  transform: scaleX(-1);
-  width:16px
+.inactiveOneStar{
+  width: 36px
 }
 
-.footerBtn{
-  margin: 28px 16px
+.shareopinion{
+  display:grid;
+  grid-template-rows: 22px 22px;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+  line-height: 22px;
 }
 
-.footerModalBtn{
-  background-color: var(--primary-color);
+.textarea{
+  box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.05);
+  border-radius: 4px;
+  width:343px;
+  height: 154px;
+  margin: 18px 0px 39px 0px;
+  padding: 12px 9px 22px 20px;
+  color: var(--secondary-color);
+  font-size: var(--caption-font-size);
+}
+
+.addPhotoSection{
+  width: 104px;
+  height: 104px;
+  box-shadow: 0px 1px 16px rgba(0, 0, 0, 0.16);
+  border-radius: 4px;
+  padding-top: 15px
+}
+
+.circle{
+  width:52px;
+  height: 52px;
+  display: grid;
+  background: var(--primary-color);
+  margin:0px 26px 15px;
+  border-radius: 50%;
+  justify-items: center;
+  align-content: center;
+}
+
+.cameraIcon{
+  width:35px;
+  height: 30px;
+
+}
+
+.text{
+  color: var(--body-color);
+  padding: 0px 0px 20px 6px;
+  line-height: 8px;
+}
+
+.sendReviewBlock{
+  margin: 44px 0px
+}
+
+.sendRevievBtn{
+  width:343px;
+  height: 48px;
+  background: #DB3022;
   box-shadow: 0px 4px 8px rgba(211, 38, 38, 0.25);
   border-radius: 25px;
-  width: 100%;
   color: var(--bg-color);
-  font-size: var(--caption-font-size);
-  padding:14px;
-  font-weight: 500;
-
-}
-
-.lineBottom{
-  background: #000000;
-  border-radius: 100px;
-  width: 134px;
-  height:5px;
-  margin-bottom: 9px
+  line-height: 20;
 }

@@ -3,7 +3,11 @@ import HomePage from './components/Home/Home'
 import ShopPage from './components/Shop/Shop'
 import Navbar from './components/Navbar/Navbar'
 import Modal from './components/ui/Modal/Modal'
+import './components/ui/Modal/Modal.css'
+import inactiveStar from './assets/inactiveStar.png'
+import cameraIcon from './assets/cameraIcon.png'
 import moreInfoIcon from './assets/forvardIcon.png'
+
 
 import './components/Shop/Shop.css'
 import './components/Home/Home.css'
@@ -12,7 +16,16 @@ import './components/Home/Home.css'
 function App() {
   const [page, setPage] = useState("HOME")
 
-  const [isOpenModal, setIsOpenModal] = useState(true)
+  const [isOpenModal, setIsOpenModal] = useState(false)
+  const [isOpenModalReview, setIsOpenModalReview] = useState(true)
+
+  function handleSubmit(e){
+    console.log(e.value)
+  }
+
+  function handleChange(){
+
+  }
   return (
     <div className="App">
       {page === "HOME" && <HomePage />}
@@ -38,6 +51,53 @@ function App() {
           
         </Modal>
       )}
+
+      {isOpenModalReview && (
+        <Modal onClose={() => setIsOpenModalReview(false)}>
+          <div className="yourRateModal">
+
+            <h3 className="header">What is your rate</h3>
+            <div className="starRow">
+              <img className="inactiveOneStar" src={inactiveStar} alt=" inactive star" />
+              <img className="inactiveOneStar" src={inactiveStar} alt=" inactive star" />
+              <img className="inactiveOneStar" src={inactiveStar} alt=" inactive star" />
+              <img className="inactiveOneStar" src={inactiveStar} alt=" inactive star" />
+              <img className="inactiveOneStar" src={inactiveStar} alt=" inactive star" />
+            </div>
+
+            <section className="shareopinion">
+              <span className="h3 opinionContext"> Please share your opinion </span>
+              <span className="h3 opinionContext"> about the product</span>
+            </section>
+
+            <div className="typeReview">
+              <form onSubmit={handleSubmit}>
+                <label>
+                <textarea className="btn textarea" value={(e)=>e.value} onChange={handleChange}  placeholder="Your review" />
+                </label>
+              </form>
+
+              <div className="addPhotoSection">
+                <div className="circle">
+                  <img className="cameraIcon" src={cameraIcon} alt="cameraIcon" />
+                </div>
+                <span className="hint text">Add your photos</span>
+              </div>
+
+              <div className="sendReviewBlock">
+                <button className="btn sendRevievBtn">SEND REVIEW</button>
+              </div>
+
+
+            </div>
+
+            
+          </div>
+
+        </Modal>
+      )}
+      
+
       
    
     </div>
@@ -45,3 +105,8 @@ function App() {
 }
 
 export default App;
+
+
+
+
+
