@@ -99,7 +99,7 @@ margin-right: auto;
   height: 154px;
   margin: 18px 0px 39px 0px;
   padding: 12px 9px 22px 20px;
-  color: var(--secondary-color);
+  background-color: var(--bg-color-light);
   font-size: var(--caption-font-size);
 }
 
@@ -123,8 +123,8 @@ margin-right: auto;
 }
 
 .cameraIcon{
-  width:35px;
-  height: 30px;
+  width:22px;
+  height: 20px;
 
 }
 
