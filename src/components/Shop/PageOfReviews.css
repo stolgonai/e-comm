@@ -1,0 +1,218 @@
+.App{
+    width: 375px;
+}
+.allReviews{
+    width: 375px;
+    padding: 40px 15px 0px;
+    overflow-y: auto;
+
+}
+.revHeader{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    justify-content: start;
+    row-gap: 20px;
+}
+
+.reviewHeaderTitle{
+    font-size: 36px;
+}
+
+.ratingBlock{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    display: grid;
+    grid-template-columns: 85px 245px;
+}
+.rates{
+    display: grid;
+    grid-template-rows: 1fr auto;
+}
+
+.ratesInGraffic{
+    display: grid;
+    grid-template-columns: 1fr 1fr auto;
+    column-gap: 10px;
+}
+
+.ratesInStar, .ratesInNums{
+    display: grid;
+    grid-auto-rows: auto;
+    justify-content: flex-end;
+    align-content: flex-end;
+    justify-items: flex-end;
+    align-items: flex-end;
+}
+.oneSmallActiveStar{
+    width:13px;
+    height: 12px;
+}
+.ratesInGrafficLine{
+    display: grid;
+    row-gap: 10px;
+    grid-auto-rows: auto;
+    justify-content: start;
+    justify-items: start;
+    align-items: center;
+}
+
+.rangeLine{
+    height: 8px;
+    background-color: var(--primary-color);
+    border-radius: 4px;
+}
+.one{
+    width:114px;
+}
+.two{
+    width:40px
+}
+.three{
+    width:30px
+}
+.four{
+    width:16px
+}
+.five{
+    width:10px;
+}
+
+
+form{
+    display: grid;
+    grid-auto-flow: column;
+    column-gap: 10px;
+    margin-right:16px;
+    text-align: center;
+    align-items: center;
+}
+
+.rateAverg{
+    font-size: 44px;
+    font-weight: 500;
+    letter-spacing: -0.408px;
+    margin-bottom: 16px;
+}
+.peoplesReview{
+    display: flex;
+    justify-content: space-between;
+    justify-self:end;
+    align-content: center;
+    align-items: center;
+}
+
+.label{
+    vertical-align: middle;
+}
+
+.headLineREview{
+    font-size: var(--headline-font-size);
+    justify-self:end;
+    align-content: center;
+}
+
+
+.checkBox{
+    border: 2px solid #9B9B9B;
+    box-sizing: border-box;
+    border-radius: 4px;
+    width: 20px;
+    height: 20px;
+}
+.reviewBlock{
+    padding: 0px 20px 16px 24px;
+    margin: 15px
+}
+
+.customerReview{
+    background: #FFFFFF;
+    box-shadow: 0px 1px 25px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    z-index:1;
+    margin:40px 15px;
+
+}
+
+.avatar{
+    z-index: 10;
+    margin-top:-16px;
+    margin-left: -12px;
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    background-image: url('../../assets/avataR.svg');
+    background-position: 40% 30%;
+    background-repeat: no-repeat;
+
+}
+.customerPersonalRate{
+    display: flex;
+    justify-content: space-between;
+    margin: 11px 0
+}
+.customerPersonalRate2{
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 0 15px
+}
+
+.reviewdate{
+    font-size: 11px;
+}
+
+.reviewText{
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: -0.15px;
+    color: #222222;
+    opacity: 0.8;
+}
+
+.helpfulLink{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    align-content: center;
+}
+span.helpFulLink{
+    font-size: 11px;
+    color: #9B9B9B;
+    margin-bottom:-15px
+}
+
+footer.review{
+    position: fixed;
+    display: flex;
+    justify-content: flex-end;
+    left:220px;
+    bottom: 160px;
+}
+
+.writeReviewBtn{
+    background: #DB3022;
+    box-shadow: 0px 4px 8px rgba(211, 38, 38, 0.25);
+    border-radius: 25px;
+    color: var(--bg-color-light);
+    width:128px;
+    height: 36px;
+    font-size: 11px;
+}
+.pen{
+    width: 20px;
+    height: 20px;
+    left: 6px;
+    top: 8.31px;
+}
+
+.nextCustomerName{
+    margin:-20px 10px 0px;
+}
+
+.gradientEffect{
+    position: fixed;
+    height: 150px ;
+    width: 375px;
+    left: 0;
+    bottom: 0;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 77.6%);
+}

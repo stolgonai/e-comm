@@ -7,6 +7,7 @@ import './components/ui/Modal/Modal.css'
 import inactiveStar from './assets/inactiveStar.png'
 import cameraIcon from './assets/cameraIcon.png'
 import moreInfoIcon from './assets/forvardIcon.png'
+import PageOfReviews from './components/Shop/PageOfReviews'
 
 
 import './components/Shop/Shop.css'
@@ -17,7 +18,7 @@ function App() {
   const [page, setPage] = useState("HOME")
 
   const [isOpenModal, setIsOpenModal] = useState(false)
-  const [isOpenModalReview, setIsOpenModalReview] = useState(true)
+  const [isOpenModalReview, setIsOpenModalReview] = useState(false)
 
   function handleSubmit(e){
     console.log(e.value)
@@ -28,9 +29,9 @@ function App() {
   }
   return (
     <div className="App">
-      {page === "HOME" && <HomePage />}
-      {page === "SHOP" && <ShopPage />}
-      <Navbar navigate={setPage} />
+      {/* {page === "HOME" && <HomePage />}
+      {page === "SHOP" && <ShopPage />} */}
+      {/* <Navbar navigate={setPage} /> */}
       {isOpenModal && (
         <Modal onClose={() => setIsOpenModal(false)} btnText="ADD TO CART">
           <h3>Select sizes</h3>
@@ -97,6 +98,7 @@ function App() {
         </Modal>
       )}
       
+      <PageOfReviews />
 
       
    
